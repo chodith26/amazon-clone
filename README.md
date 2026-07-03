@@ -10,7 +10,6 @@ A pixel-accurate clone of the Amazon homepage built as a front-end practice proj
 ## Tech Stack
 - HTML5
 - CSS3
-- Tailwind CSS
 
 ## How to Run
 Open `main.html` in any browser. No installation required.
