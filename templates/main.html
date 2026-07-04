@@ -11,13 +11,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
   </head>
 
   <body>
+    {% set img = url_for('static', filename='images_amz/') %}
     <div class="navbar">
       <div class="amz_logo">
-        <div class="logo"><img src="images_amz/" alt=""></div>
+        <div class="logo"><img src="{{ img }}" alt=""></div>
       </div>
       <div class="loc">
         <p>Deliver to</p>
@@ -81,25 +82,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box101.jpg" alt="" />
+              <img src="{{ img }}box101.jpg" alt="" />
               <figcaption>Jeans under $50</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box102.jpg" alt="" />
+              <img src="{{ img }}box102.jpg" alt="" />
               <figcaption>Tops under $25</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box103.jpg" alt="" />
+              <img src="{{ img }}box103.jpg" alt="" />
               <figcaption>Dresses under $30</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box104.jpg" alt="" />
+              <img src="{{ img }}box104.jpg" alt="" />
               <figcaption>Shoes under $50</figcaption>
             </figure>
           </div>
@@ -111,25 +112,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/bx1.jpg" alt="" />
+              <img src="{{ img }}bx1.jpg" alt="" />
               <figcaption>Budget TVs|Save Extra with No Cost..</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/bx2.jpg" alt="" />
+              <img src="{{ img }}bx2.jpg" alt="" />
               <figcaption>4K TVs|Upto 24 months No Cost..</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/bx3.jpg" alt="" />
+              <img src="{{ img }}bx3.jpg" alt="" />
               <figcaption>Big Screens|Free Installation</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/bx4.jpg" alt="" />
+              <img src="{{ img }}bx4.jpg" alt="" />
               <figcaption>Ultra Premium TVs|Upto 50% off</figcaption>
             </figure>
           </div>
@@ -139,7 +140,7 @@
       <div class="sec2 box">
         <div class="sec2-con">
           <h2>9.9 Super Shopping Day</h2>
-          <div class="img1" style="background-image: url('images_amz/box2.jpg')"></div>
+          <div class="img1" style="background-image: url('{{ url_for("static", filename="images_amz/box2.jpg") }}')"></div>
           <p>Explore deals</p>
         </div>
       </div>
@@ -149,25 +150,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box201.jpg" alt="" />
+              <img src="{{ img }}box201.jpg" alt="" />
               <figcaption>Cleaning Tools</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box202.jpg" alt="" />
+              <img src="{{ img }}box202.jpg" alt="" />
               <figcaption>Home Storage</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box203.jpg" alt="" />
+              <img src="{{ img }}box203.jpg" alt="" />
               <figcaption>Home Decor</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box204.jpg" alt="" />
+              <img src="{{ img }}box204.jpg" alt="" />
               <figcaption>Bedding</figcaption>
             </figure>
           </div>
@@ -179,25 +180,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box5.jpg" alt="" />
+              <img src="{{ img }}box5.jpg" alt="" />
               <figcaption>Kitchen & Dining</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box52.jpg" alt="" />
+              <img src="{{ img }}box52.jpg" alt="" />
               <figcaption>Home Improvement</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box53.jpg" alt="" />
+              <img src="{{ img }}box53.jpg" alt="" />
               <figcaption>Decor</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box54.jpg" alt="" />
+              <img src="{{ img }}box54.jpg" alt="" />
               <figcaption>Bedding & Bath</figcaption>
             </figure>
           </div>
@@ -209,25 +210,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box61.jpg" alt="" />
+              <img src="{{ img }}box61.jpg" alt="" />
               <figcaption>Dining</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box62.jpg" alt="" />
+              <img src="{{ img }}box62.jpg" alt="" />
               <figcaption>Home</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box63.jpg" alt="" />
+              <img src="{{ img }}box63.jpg" alt="" />
               <figcaption>Kitchen</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box7.jpg" alt="" />
+              <img src="{{ img }}box7.jpg" alt="" />
               <figcaption>Health & Beauty</figcaption>
             </figure>
           </div>
@@ -239,25 +240,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box6.jpg" alt="" />
+              <img src="{{ img }}box6.jpg" alt="" />
               <figcaption>Cooker</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box71.jpg" alt="" />
+              <img src="{{ img }}box71.jpg" alt="" />
               <figcaption>Coffee</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box72.jpg" alt="" />
+              <img src="{{ img }}box72.jpg" alt="" />
               <figcaption>Pots and P...</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box73.jpg" alt="" />
+              <img src="{{ img }}box73.jpg" alt="" />
               <figcaption>Kettle</figcaption>
             </figure>
           </div>
@@ -269,25 +270,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box81.jpg" alt="" />
+              <img src="{{ img }}box81.jpg" alt="" />
               <figcaption>Dresses</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box82.jpg" alt="" />
+              <img src="{{ img }}box82.jpg" alt="" />
               <figcaption>Knits</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box8.jpg" alt="" />
+              <img src="{{ img }}box8.jpg" alt="" />
               <figcaption>Jackets</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box83.jpg" alt="" />
+              <img src="{{ img }}box83.jpg" alt="" />
               <figcaption>Jewelry</figcaption>
             </figure>
           </div>
@@ -302,25 +303,25 @@
 
       <div class="product-slider">
         <div class="product">
-          <img src="images_amz/r18.jpg" alt="White Shirt" />
+          <img src="{{ img }}r18.jpg" alt="White Shirt" />
         </div>
         <div class="product">
-          <img src="images_amz/r12.jpg" alt="White Tshirt" />
+          <img src="{{ img }}r12.jpg" alt="White Tshirt" />
         </div>
         <div class="product">
-          <img src="images_amz/r13.jpg" alt="Pink Shoes" />
+          <img src="{{ img }}r13.jpg" alt="Pink Shoes" />
         </div>
         <div class="product">
-          <img src="images_amz/r14.jpg" alt="Jeans" />
+          <img src="{{ img }}r14.jpg" alt="Jeans" />
         </div>
         <div class="product">
-          <img src="images_amz/r15,jpg.jpg" alt="Socks" />
+          <img src="{{ img }}r15,jpg.jpg" alt="Socks" />
         </div>
         <div class="product">
-          <img src="images_amz/r16.jpg" alt="Bundle of Tshirts" />
+          <img src="{{ img }}r16.jpg" alt="Bundle of Tshirts" />
         </div>
         <div class="product">
-          <img src="images_amz/r17.jpg" alt="Black Sweatshirt" />
+          <img src="{{ img }}r17.jpg" alt="Black Sweatshirt" />
         </div>
       </div>
     </div>
@@ -330,25 +331,25 @@
 
       <div class="product-slider">
         <div class="product">
-          <img src="images_amz/r21.jpg" alt="Casio Watch" />
+          <img src="{{ img }}r21.jpg" alt="Casio Watch" />
         </div>
         <div class="product">
-          <img src="images_amz/r22.jpg" alt="metal Watch" />
+          <img src="{{ img }}r22.jpg" alt="metal Watch" />
         </div>
         <div class="product">
-          <img src="images_amz/r23.jpg" alt="R.O" />
+          <img src="{{ img }}r23.jpg" alt="R.O" />
         </div>
         <div class="product">
-          <img src="images_amz/r24.jpg" alt="Bella" />
+          <img src="{{ img }}r24.jpg" alt="Bella" />
         </div>
         <div class="product">
-          <img src="images_amz/r25.jpg" alt="Lamp" />
+          <img src="{{ img }}r25.jpg" alt="Lamp" />
         </div>
         <div class="product">
-          <img src="images_amz/r26.jpg" alt="Rolex Sir" />
+          <img src="{{ img }}r26.jpg" alt="Rolex Sir" />
         </div>
         <div class="product">
-          <img src="images_amz/r27.jpg" alt="Band" />
+          <img src="{{ img }}r27.jpg" alt="Band" />
         </div>
       </div>
     </div>
@@ -359,25 +360,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box301.jpg" alt="" />
+              <img src="{{ img }}box301.jpg" alt="" />
               <figcaption>Outdoor Play Sets</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box302.jpg" alt="" />
+              <img src="{{ img }}box302.jpg" alt="" />
               <figcaption>Learning Toys</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box303.jpg" alt="" />
+              <img src="{{ img }}box303.jpg" alt="" />
               <figcaption>Action Figures</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box304.jpg" alt="" />
+              <img src="{{ img }}box304.jpg" alt="" />
               <figcaption>Pretend Play Toys</figcaption>
             </figure>
           </div>
@@ -389,25 +390,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box401.jpg" alt="" />
+              <img src="{{ img }}box401.jpg" alt="" />
               <figcaption>Smartphones</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box402.jpg" alt="" />
+              <img src="{{ img }}box402.jpg" alt="" />
               <figcaption>Watches</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box403.jpg" alt="" />
+              <img src="{{ img }}box403.jpg" alt="" />
               <figcaption>Head Phones</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box404.jpg" alt="" />
+              <img src="{{ img }}box404.jpg" alt="" />
               <figcaption>Tablets</figcaption>
             </figure>
           </div>
@@ -419,25 +420,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box501.jpg" alt="" />
+              <img src="{{ img }}box501.jpg" alt="" />
               <figcaption>Ride On's</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box502.jpg" alt="" />
+              <img src="{{ img }}box502.jpg" alt="" />
               <figcaption>Building & Construction</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box503.jpg" alt="" />
+              <img src="{{ img }}box503.jpg" alt="" />
               <figcaption>Dolls & Doll Houses</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box504.jpg" alt="" />
+              <img src="{{ img }}box504.jpg" alt="" />
               <figcaption>Swimming Pools</figcaption>
             </figure>
           </div>
@@ -449,25 +450,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/box601.jpg" alt="" />
+              <img src="{{ img }}box601.jpg" alt="" />
               <figcaption>Headphones</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box602.jpg" alt="" />
+              <img src="{{ img }}box602.jpg" alt="" />
               <figcaption>Tablets</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box603.jpg" alt="" />
+              <img src="{{ img }}box603.jpg" alt="" />
               <figcaption>Gaming</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/box604.jpg" alt="" />
+              <img src="{{ img }}box604.jpg" alt="" />
               <figcaption>Speakers</figcaption>
             </figure>
           </div>
@@ -481,25 +482,25 @@
 
       <div class="product-slider">
         <div class="product">
-          <img src="images_amz/hp1.jpg" alt="" />
+          <img src="{{ img }}hp1.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/hp2.jpg" alt="" />
+          <img src="{{ img }}hp2.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/hp3.jpg" alt="" />
+          <img src="{{ img }}hp3.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/hp4.jpg" alt="" />
+          <img src="{{ img }}hp4.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/hp5.jpg" alt="" />
+          <img src="{{ img }}hp5.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/hp6.jpg" alt="" />
+          <img src="{{ img }}hp6.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/hp7.jpg" alt="" />
+          <img src="{{ img }}hp7.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -509,25 +510,25 @@
 
       <div class="product-slider">
         <div class="product">
-          <img src="images_amz/i1.jpg" alt="" />
+          <img src="{{ img }}i1.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/i2.jpg" alt="" />
+          <img src="{{ img }}i2.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/i3.jpg" alt="" />
+          <img src="{{ img }}i3.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/i4.jpg" alt="" />
+          <img src="{{ img }}i4.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/i5.jpg" alt="" />
+          <img src="{{ img }}i5.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/i6.jpg" alt="" />
+          <img src="{{ img }}i6.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/i7.jpg" alt="" />
+          <img src="{{ img }}i7.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -537,25 +538,25 @@
 
       <div class="product-slider">
         <div class="product">
-          <img src="images_amz/a1.jpg" alt="" />
+          <img src="{{ img }}a1.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/a2.jpg" alt="" />
+          <img src="{{ img }}a2.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/a3.jpg" alt="" />
+          <img src="{{ img }}a3.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/a4.jpg" alt="" />
+          <img src="{{ img }}a4.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/a5.jpg" alt="" />
+          <img src="{{ img }}a5.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/a6.jpg" alt="" />
+          <img src="{{ img }}a6.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/a7.jpg" alt="" />
+          <img src="{{ img }}a7.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -566,25 +567,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/b1.jpg" alt="" />
+              <img src="{{ img }}b1.jpg" alt="" />
               <figcaption>Makeup</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/b2.jpg" alt="" />
+              <img src="{{ img }}b2.jpg" alt="" />
               <figcaption>Brushes</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/b3.jpg" alt="" />
+              <img src="{{ img }}b3.jpg" alt="" />
               <figcaption>Sponges</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/b4.jpg" alt="" />
+              <img src="{{ img }}b4.jpg" alt="" />
               <figcaption>Mirrors</figcaption>
             </figure>
           </div>
@@ -596,25 +597,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/c1.jpg" alt="" />
+              <img src="{{ img }}c1.jpg" alt="" />
               <figcaption>Apparel</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/c2.jpg" alt="" />
+              <img src="{{ img }}c2.jpg" alt="" />
               <figcaption>Hats</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/c3.jpg" alt="" />
+              <img src="{{ img }}c3.jpg" alt="" />
               <figcaption>Action figures</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/c4.jpg" alt="" />
+              <img src="{{ img }}c4.jpg" alt="" />
               <figcaption>Mugs</figcaption>
             </figure>
           </div>
@@ -626,25 +627,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/d1.jpg" alt="" />
+              <img src="{{ img }}d1.jpg" alt="" />
               <figcaption>Laptops</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/d2.jpg" alt="" />
+              <img src="{{ img }}d2.jpg" alt="" />
               <figcaption>PC's</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/d3.jpg" alt="" />
+              <img src="{{ img }}d3.jpg" alt="" />
               <figcaption>Hard Drives</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/d4.jpg" alt="" />
+              <img src="{{ img }}d4.jpg" alt="" />
               <figcaption>Monitors</figcaption>
             </figure>
           </div>
@@ -656,25 +657,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/e1.jpg" alt="" />
+              <img src="{{ img }}e1.jpg" alt="" />
               <figcaption>Kitchen</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/e2.jpg" alt="" />
+              <img src="{{ img }}e2.jpg" alt="" />
               <figcaption>Home Decor</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/e3.jpg" alt="" />
+              <img src="{{ img }}e3.jpg" alt="" />
               <figcaption>Dining</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/e4.jpg" alt="" />
+              <img src="{{ img }}e4.jpg" alt="" />
               <figcaption>Smart Home</figcaption>
             </figure>
           </div>
@@ -688,25 +689,25 @@
 
       <div class="product-slider">
         <div class="product">
-          <img src="images_amz/f1.jpg" alt="" />
+          <img src="{{ img }}f1.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/f2.jpg" alt="" />
+          <img src="{{ img }}f2.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/f3.jpg" alt="" />
+          <img src="{{ img }}f3.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/f4.jpg" alt="" />
+          <img src="{{ img }}f4.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/f5.jpg" alt="" />
+          <img src="{{ img }}f5.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/f6.jpg" alt="" />
+          <img src="{{ img }}f6.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/f7.jpg" alt="" />
+          <img src="{{ img }}f7.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -716,25 +717,25 @@
 
       <div class="product-slider">
         <div class="product">
-          <img src="images_amz/hp1.jpg" alt="" />
+          <img src="{{ img }}hp1.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/bk1.jpg" alt="" />
+          <img src="{{ img }}bk1.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/hp3.jpg" alt="" />
+          <img src="{{ img }}hp3.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/bk2.jpg" alt="" />
+          <img src="{{ img }}bk2.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/hp5.jpg" alt="" />
+          <img src="{{ img }}hp5.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/bk3.jpg" alt="" />
+          <img src="{{ img }}bk3.jpg" alt="" />
         </div>
         <div class="product">
-          <img src="images_amz/hp7.jpg" alt="" />
+          <img src="{{ img }}hp7.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -745,25 +746,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/hp6.jpg" alt="" />
+              <img src="{{ img }}hp6.jpg" alt="" />
               <figcaption>Books</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/g1.jpg" alt="" />
+              <img src="{{ img }}g1.jpg" alt="" />
               <figcaption>Fashion</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/g2.jpg" alt="" />
+              <img src="{{ img }}g2.jpg" alt="" />
               <figcaption>PC</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/g3.jpg" alt="" />
+              <img src="{{ img }}g3.jpg" alt="" />
               <figcaption>Beauty</figcaption>
             </figure>
           </div>
@@ -775,25 +776,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/h1.jpg" alt="" />
+              <img src="{{ img }}h1.jpg" alt="" />
               <figcaption>Backpacks</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/h2.jpg" alt="" />
+              <img src="{{ img }}h2.jpg" alt="" />
               <figcaption>Suitcase</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/h3.jpg" alt="" />
+              <img src="{{ img }}h3.jpg" alt="" />
               <figcaption>Accessories</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/h4.jpg" alt="" />
+              <img src="{{ img }}h4.jpg" alt="" />
               <figcaption>Handbags</figcaption>
             </figure>
           </div>
@@ -805,25 +806,25 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/z1.jpg" alt="" />
+              <img src="{{ img }}z1.jpg" alt="" />
               <figcaption>PC Gaming</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/z2.jpg" alt="" />
+              <img src="{{ img }}z2.jpg" alt="" />
               <figcaption>XBox</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/z3.jpg" alt="" />
+              <img src="{{ img }}z3.jpg" alt="" />
               <figcaption>Play Station</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/z4.jpg" alt="" />
+              <img src="{{ img }}z4.jpg" alt="" />
               <figcaption>Nintendo Switch</figcaption>
             </figure>
           </div>
@@ -835,31 +836,43 @@
         <div class="grid">
           <div class="card">
             <figure>
-              <img src="images_amz/e1.jpg" alt="" />
+              <img src="{{ img }}e1.jpg" alt="" />
               <figcaption>Desktop</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/e2.jpg" alt="" />
+              <img src="{{ img }}e2.jpg" alt="" />
               <figcaption>Laptop</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/e3.jpg" alt="" />
+              <img src="{{ img }}e3.jpg" alt="" />
               <figcaption>Hard Drive</figcaption>
             </figure>
           </div>
           <div class="card">
             <figure>
-              <img src="images_amz/e4.jpg" alt="" />
+              <img src="{{ img }}e4.jpg" alt="" />
               <figcaption>PC's Accessories</figcaption>
             </figure>
           </div>
         </div>
         <a href="#" class="see-all-link">See more</a>
       </div>
+    </div>
+    <div class="recommended-section">
+      <h2 class="recommended-title">Recommended for You</h2>
+        <div class="recommended-grid">
+            {% for product in products %}
+            <div class="rec-card">
+                <p class="rec-name">{{ product.name }}</p>
+                <p class="rec-price">{{ product.price }}</p>
+                <span class="rec-category">{{ product.category }}</span>
+            </div>
+            {% endfor %}
+        </div>
     </div>
     <footer>
       <div class="recommend-box">
@@ -927,7 +940,7 @@
 
       <!-- Amazon Logo -->
       <div class="footer-logo">
-        <img src="images_amz/amz_logo.jpg" alt="Amazon Logo">
+        <img src="{{ img }}amz_logo.jpg" alt="Amazon Logo">
       </div>
 
       <!-- Options -->
@@ -940,17 +953,17 @@
         </select>
 
         <select>
-          <option>$ USD - U.S. Dollar</option>
           <option>₹ INR - Indian Rupee</option>
+          <option>$ USD - U.S. Dollar</option>
           <option>€ EUR - Euro</option>
           <option>£ GBP - British Pound</option>
         </select>
 
         <select>
-          <option>🇺🇸 United States</option>
-          <option>🇮🇳 India</option>
-          <option>🇬🇧 United Kingdom</option>
-          <option>🇨🇦 Canada</option>
+          <option>🇮🇳 - India</option>
+          <option>🇺🇸 - United States</option>
+          <option>🇬🇧 - United Kingdom</option>
+          <option>🇨🇦 - Canada</option>
         </select>
       </div>
     </div>
