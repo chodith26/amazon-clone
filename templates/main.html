@@ -864,15 +864,7 @@
     </div>
     <div class="recommended-section">
       <h2 class="recommended-title">Recommended for You</h2>
-        <div class="recommended-grid">
-            {% for product in products %}
-            <div class="rec-card">
-                <p class="rec-name">{{ product.name }}</p>
-                <p class="rec-price">{{ product.price }}</p>
-                <span class="rec-category">{{ product.category }}</span>
-            </div>
-            {% endfor %}
-        </div>
+      <div id="js-products-grid" class="recommended-grid"></div>
     </div>
     <footer>
       <div class="recommend-box">
@@ -1091,5 +1083,6 @@
     </div>
   </section>
     </footer>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
   </body>
 </html>
